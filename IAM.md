@@ -10,3 +10,28 @@
 + **Users and Groups** can be assigned JSON documents called **policies**
 + These policies define the permissions of a **user**
 + **least privilege principle**: don't give more permissions than user needs
+
+# IAM: Hands on
++ Create new Group with policy AdministratorAccess
++ Create a new IAM user and add him to above gorup with AdminAccess
++ Use the newly created user rather than root user
++ Update account alias so that one can use text rather than number
++ After that new sign-in url for IAM user is available which can used by IAM user to login
+
+# IAM: Policy
++ Policy of the group will be inherited by all the users in that group
++ If the user is part of multiple groups, policies from both group will be applicable to user
+
+# IAM: Policy Structure
+Consists of Version, ID and Statements
++ Version: policy language version, always include "2010-10-17"
++ Id: an identifier for the policy (optional)
++ Statement: one or more individual statements(required)
+
+Statements consists of:
++ Sid: identifier of the statement(optional)
++ Effect: whether statement allows or denies access(Allow/Deny)
++ Policy: user/account/role to which this policy applied to
++ Action: list of actions this policy allows or denies
++ Resource: list of resources to which this action applied to
++ Condition: conditions for when this policy is in effect(optional)
