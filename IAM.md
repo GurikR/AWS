@@ -21,19 +21,21 @@
 # IAM: Policy
 + Policy of the group will be inherited by all the users in that group
 + If the user is part of multiple groups, policies from both group will be applicable to user
++ AdministratorAccess for admin access : access to all the resources
++ IAMReadOnlyAccess which permits read only permissions for all the aws services/resources
 
 # IAM: Policy Structure
 Consists of Version, ID and Statements
-+ Version: policy language version, always include "2010-10-17"
-+ Id: an identifier for the policy (optional)
-+ Statement: one or more individual statements(required)
++ **Version**: policy language version, always include "2010-10-17"
++ **Id**: an identifier for the policy (optional)
++ **Statement**: one or more individual statements(required)
 
 Statements consists of:
-+ Sid: identifier of the statement(optional)
-+ Effect: whether statement allows or denies access(Allow/Deny)
-+ Policy: user/account/role to which this policy applied to
-+ Action: list of actions this policy allows or denies
-+ Resource: list of resources to which this action applied to
-+ Condition: conditions for when this policy is in effect(optional)
++ **Sid**: identifier of the statement(optional)
++ **Effect**: whether statement allows or denies access(Allow/Deny)
++ **Policy**: user/account/role to which this policy applied to
++ **Action**: list of actions this policy allows or denies
++ **Resource**: list of resources to which this action applied to
++ **Condition**: conditions for when this policy is in effect(optional)
 Inline-style: 
 ![alt text](https://github.com/GurikR/AWS/blob/main/policy-example.PNG "Policy")
