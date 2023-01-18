@@ -35,3 +35,5 @@ Statements consists of:
 + Action: list of actions this policy allows or denies
 + Resource: list of resources to which this action applied to
 + Condition: conditions for when this policy is in effect(optional)
+Inline-style: 
+![alt text](https://github.com/GurikR/AWS/blob/main/policy-example.PNG "Policy")
